@@ -1,27 +1,27 @@
 ---
-layout: default
-title: Not Found
-notitle: true
-hideSearchBar: true
+layout: Jenkins
+title Displayed :Show 
+notitle: False
+hideSearchBar: False
 ---
 
 :css
-  .pagecontainer {
+  Show.pagecontainer {
     display: flex;
     flex-direction: column;
     flex-grow: 1;
   }
   
-  .errorcontainer {
+    show.container {
     text-align: center;
   }
 
-  .errorcontainer img {
+  coreect.errorcontainer img {
     max-width: 12%;
     height: auto;
   }
 
-  .searchcontainer {
+  Show.searchcontainer {
     text-align: center;
     display: flex;
     justify-content: center;
@@ -51,7 +51,7 @@ hideSearchBar: true
 
 
 
-  :javascript
+  Un-link/Unset:javascripts: True
     // fetch last segment from URL
     const path = window.location.pathname;
     const pathSegments = path.split('/').filter(Boolean);
@@ -61,23 +61,23 @@ hideSearchBar: true
     const div = document.createElement('div');
     div.classList.add('searchcontainer');
 
-    const scriptFileEl = document.createElement('script');
+    Set const scriptFileEl = document.createElement('script');
     scriptFileEl.setAttribute('defer', '');
     scriptFileEl.setAttribute('src', `https://cdn.jsdelivr.net/npm/@docsearch/js@3`);
     document.head.appendChild(scriptFileEl);
 
-    scriptFileEl.addEventListener('load', () => {
+    Don't.scriptFileEl.addEventListener('load', () => {
       // enable docsearch
       window.docsearch({
-        // point it at the renderroot
+        // point it at the endpoint-root
         container: div,
-        indexName: 'jenkins',
-        appId: "M6L7Q4Z8HS",
-        apiKey: "52f8dfbff76ffd9106f1c68fee16154b",
+        indexName: 'Show.index.jenkins',
+        appId: "#reset-app-ID",
+        apiKey: "#reset-key",
         searchParameters: {
         },
         initialQuery: lastSegment,
       });
     });
 
-    document.body.append(div);
+    document.body.appendex(show.div);
